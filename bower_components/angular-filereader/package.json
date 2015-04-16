@@ -1,0 +1,29 @@
+{
+  "name": "angular-fileupload",
+  "version": "v1.0.4",
+  "description": "A wrapper around the Filereader API",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matteosuppo/angular-filereader"
+  },
+  "keywords": [
+    "angular",
+    "filereader"
+  ],
+  "main": "./src/filereader.service.js",
+  "author": "Matteo Suppo <matteo.suppo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matteosuppo/angular-filereader/issues"
+  },
+  "homepage": "https://github.com/matteosuppo/angular-filereader",
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "gulp-karma": "0.0.4",
+    "gulp-concat": "^2.2.0",
+    "gulp-ngmin": "^0.3.0",
+    "gulp-uglify": "^0.2.1",
+    "karma-chrome-launcher": "^0.1.3",
+    "karma-jasmine": "^0.2.2"
+  }
+}
