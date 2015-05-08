@@ -28,4 +28,3 @@ app.config(['cfpLoadingBarProvider', (cfpLoadingBarProvider) ->
 
 
 console.log("Restangular Initiated")
-angular.bootstrap(document, ['app']);

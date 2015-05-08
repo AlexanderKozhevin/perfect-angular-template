@@ -13,6 +13,7 @@
     "gulp-concat": "~2.4.1"
   },
   "dependencies": {
-    "gulp-compressor": "^0.1.0"
+    "gulp-compressor": "^0.1.0",
+    "jade": "^1.9.2"
   }
 }

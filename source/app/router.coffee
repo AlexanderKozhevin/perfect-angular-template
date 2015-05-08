@@ -3,12 +3,15 @@ angular.module('app').config ($stateProvider, $urlRouterProvider, $locationProvi
   # $locationProvider.html5Mode({enabled: true, requireBase: false})
   $urlRouterProvider.otherwise("/");
 
-  # $stateProvider.state 'vod',
-  #   url: ''
-  #   abstract: true,
-  #   views:
-  #     layout: {templateUrl: '/assets/views/main.html', controller: 'VodCtrl'}
-  #
+  $stateProvider.state 'main',
+    url: ''
+    abstract: false,
+    views:
+      layout: {templateUrl: '/assets/views/main.html', controller: 'MainCtrl'}
+
+
+
+
   #
   # $stateProvider.state 'vod.mainstat',
   #   url: '/mainstat'
