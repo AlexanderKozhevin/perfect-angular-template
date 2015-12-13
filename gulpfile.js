@@ -31,7 +31,8 @@ var jslibs = [
 
 var csslibs = [
   "bower_components/angular-loading-bar/build/loading-bar.min.css",
-  "bower_components/angular-ui-tree/dist/angular-ui-tree.min.css"
+  "bower_components/angular-ui-tree/dist/angular-ui-tree.min.css",
+  "bower_components/bootstrap/dist/css/bootstrap.min.css"
 ];
 
 
@@ -96,38 +97,10 @@ gulp.task('csslibs', function() {
 });
 
 
-gulp.task('getrich', function(){
-var str = "";
-
-str += "─────────███─────────\n"
-str += "─────────█$█─────────\n"
-str += "─────█████$██████────\n"
-str += "───███████$████████──\n"
-str += "──████████$████████──\n"
-str += "─█████████$████████──\n"
-str += "─███████─█$█──████───\n"
-str += "─███████─█$█─────────\n"
-str += "─█████████$█─────────\n"
-str += "─█████████$█████─────\n"
-str += "──████████$███████───\n"
-str += "────██████$█████████─\n"
-str += "───────███$█████████─\n"
-str += "─────────█$█─████████\n"
-str += "─────────█$█──███████\n"
-str += "──████───█$█──███████\n"
-str += "─█████████$█████████─\n"
-str += "██████████$█████████─\n"
-str += "─█████████$████████──\n"
-str += "───███████$██████────\n"
-str += "─────────█$█─────────\n"
-str += "─────────███─────────\n"
-
-console.log(str)
-})
 
 gulp.task('libs', ['jslibs', 'csslibs'])
 gulp.task('compile', ['libs', 'sass', 'jade', 'coffee'])
-gulp.task('server', ['compile', 'watch', 'connect', 'getrich']);
+gulp.task('server', ['compile', 'watch', 'connect']);
 
 
 gulp.task('default', ['server']);
