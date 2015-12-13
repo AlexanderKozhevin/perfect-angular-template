@@ -19,11 +19,11 @@ var jslibs = [
   "bower_components/angular-strap/dist/angular-strap.tpl.min.js",
   "bower_components/angular-ui-router/release/angular-ui-router.min.js",
   "bower_components/angular-ui-tree/dist/angular-ui-tree.min.js",
-  "bower_components/firebase/firebase.js",
-  "bower_components/angularfire/dist/angularfire.min.js",
   "bower_components/es5-shim/es5-shim.min.js",
   "bower_components/lodash/lodash.min.js",
-  "bower_components/restangular/dist/restangular.min.js"
+  "bower_components/restangular/dist/restangular.min.js",
+  "bower_components/jquery/dist/jquery.min.js",
+  "bower_components/bootstrap/dist/js/bootstrap.min.js"
 
 ];
 

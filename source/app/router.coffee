@@ -1,7 +1,7 @@
 angular.module('app').config ($stateProvider, $urlRouterProvider, $locationProvider) ->
 
-  # $locationProvider.html5Mode({enabled: true, requireBase: false})
-  $urlRouterProvider.otherwise("/");
+  $locationProvider.html5Mode({enabled: true, requireBase: false})
+  $urlRouterProvider.otherwise("/video");
 
   $stateProvider.state 'main',
     url: ''
@@ -9,8 +9,11 @@ angular.module('app').config ($stateProvider, $urlRouterProvider, $locationProvi
     views:
       layout: {templateUrl: '/assets/views/main.html', controller: 'MainCtrl'}
 
-
-
+  $stateProvider.state 'main.video',
+    url: '/video'
+    abstract: false,
+    views:
+      main: {templateUrl: '/assets/views/video.html', controller: 'VideoCtrl'}
 
   #
   # $stateProvider.state 'vod.mainstat',
